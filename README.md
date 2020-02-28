@@ -2,7 +2,7 @@
 # Car Lane Detection
 
 ## Concepts Involved
-- Hough Transform
+- ~~Hough Transform~~
 - Histogram Equalisation
 - Fourier Transfrom for Images
 - Homography
@@ -11,6 +11,6 @@
 	- Scale Invariant Feature Tranform
 	- harris corner
 - Image Preprocessing Techniques
-- 
+- Intrinsic/Extrinsic Matrices
 A public repo for working on projects
 
