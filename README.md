@@ -10,7 +10,7 @@
 - Corner Detection
 	- Scale Invariant Feature Tranform
 	- harris corner
-- Image Preprocessing Techniques
+- ~~Image Preprocessing Techniques~~
 - Intrinsic/Extrinsic Matrices
 A public repo for working on projects
 
