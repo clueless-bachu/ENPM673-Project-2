@@ -12,7 +12,7 @@ def extract_frame(filepath, frame_no):
 	return:
 		a cv2 image matrix of the nth frame of the video sequence
 	'''
-    cap = cv2.VideoCapture(filepath) #video is the video being called
-    cap.set(1,frame_no); # Where frame_no is the frame you want
-    ret, frame = cap.read() # Read the frame
-    return frame
+	cap = cv2.VideoCapture(filepath) #video is the video being called
+	cap.set(1,frame_no); # Where frame_no is the frame you want
+	ret, frame = cap.read() # Read the frame
+	return frame
