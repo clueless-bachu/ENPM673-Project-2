@@ -127,13 +127,15 @@ def lane_segmentation(raw_img, crop, source, destination):
 
 
 if __name__=="__main__":
+
 	a = int(input("Please mention data_set id: options are 1 and 2\nDataset: "))
+    filepath = input("Input the base filepath for the images")
 	if a==1:
 		# out = cv2.VideoWriter('data1.mp4', cv2.VideoWriter_fourcc(*'MP4V') , 15, (1392,512))
 		K,D,crop,dest, src = problem[1]
 		# frame = 0
-		for i in os.listdir(r"./data/data_1/data/"):
-			image = cv2.imread('./data/data_1/data/'+i)
+		for i in os.listdir(filepath):
+			image = cv2.imread(filepath+i)
 			# print(image)
 			try:
 				# print('raxcala',image)
@@ -149,7 +151,7 @@ if __name__=="__main__":
 		# out.release()
 		cv2.destroyAllWindows()
 	else:
-		C = cv2.VideoCapture('./data/data_2/challenge_video.mp4')
+		C = cv2.VideoCapture(filepath)
 		K,D,crop,dest, src = problem[2]
 		while True:
 			ret, image = C.read()
@@ -162,7 +164,6 @@ if __name__=="__main__":
 				if cv2.waitKey(25) & 0xFF == ord('q'):
 					break
 			else:
-				print('here')
 				break
 		C.release()
 		cv2.destroyAllWindows()

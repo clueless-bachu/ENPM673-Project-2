@@ -31,8 +31,8 @@ from utils import extract_frame
 # plt.imshow(frame)
 # plt.title("Using Gamma Correction")
 # plt.show()
-
-C = cv2.VideoCapture('../data/problem_1.mp4')
+filepath = input('Input the filepath\n')
+C = cv2.VideoCapture(filepath)
 # out = cv2.VideoWriter('problem1.mp4', cv2.VideoWriter_fourcc(*'MP4V') , 15, (1920,1080))
 # K,D,crop,dest, src = problem[2]
 # frame = 0
